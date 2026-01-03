@@ -6,7 +6,10 @@
   "bin": {
     "linkit": "./bin/linkit.js"
   },
-  "keywords": ["cli", "linkit"],
+  "keywords": [
+    "cli",
+    "linkit"
+  ],
   "author": "Prateet Tiwari",
   "license": "MIT",
   "preferGlobal": true,
@@ -14,6 +17,11 @@
     "node": ">=18"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   }
 }
