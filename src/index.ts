@@ -1,1 +1,3 @@
-console.log("LinkIt CLI running");
+import { runCLI } from "./router.js";
+
+runCLI(process.argv.slice(2))
