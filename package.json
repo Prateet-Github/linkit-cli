@@ -1,0 +1,19 @@
+{
+  "name": "linkit-cli",
+  "version": "0.1.0",
+  "description": "CLI for linkit service",
+  "type": "module",
+  "bin": {
+    "linkit": "./bin/linkit.js"
+  },
+  "keywords": ["cli", "linkit"],
+  "author": "Prateet Tiwari",
+  "license": "MIT",
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
