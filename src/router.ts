@@ -1,9 +1,14 @@
 import { helpCommand } from "./commands/help.command.js";
+import { registerCommand } from "./commands/register.command.js";
 
 export function runCLI(args: string[]) {
   const command = args[0];
 
   switch (command) {
+    case "register":
+      registerCommand();
+      break;
+
     case "help":
     case "--help":
     case "-h":
