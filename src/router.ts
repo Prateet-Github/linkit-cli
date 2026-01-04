@@ -1,4 +1,5 @@
 import { helpCommand } from "./commands/help.command.js";
+import { loginCommand } from "./commands/login.command.js";
 import { registerCommand } from "./commands/register.command.js";
 
 export function runCLI(args: string[]) {
@@ -8,6 +9,10 @@ export function runCLI(args: string[]) {
     case "register":
       registerCommand();
       break;
+    
+    case "login":
+      loginCommand();
+      break;  
 
     case "help":
     case "--help":
