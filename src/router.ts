@@ -1,6 +1,7 @@
 import { helpCommand } from "./commands/help.command.js";
 import { loginCommand } from "./commands/login.command.js";
 import { registerCommand } from "./commands/register.command.js";
+import { whoamiCommand } from "./commands/whoami.command.js";
 
 export function runCLI(args: string[]) {
   const command = args[0];
@@ -12,6 +13,10 @@ export function runCLI(args: string[]) {
     
     case "login":
       loginCommand();
+      break;  
+    
+    case "whoami":
+      whoamiCommand();
       break;  
 
     case "help":
