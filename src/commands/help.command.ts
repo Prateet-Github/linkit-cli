@@ -3,13 +3,20 @@ export function helpCommand() {
 LinkIt CLI
 
 Usage:
-  linkit <command> [options]
+  linkit <command>
 
-Commands:
-  help              Show this help message
-  shorten <url>     Shorten a URL (coming soon)
+Authentication:
+  register        Create a new account
+  login           Log in to your account
+  logout          Log out from the current session
+  whoami          Show the currently logged-in user
+
+Utilities:
+  help            Show this help message
 
 Examples:
-  linkit shorten https://example.com
+  linkit register
+  linkit login
+  linkit whoami
 `);
 }

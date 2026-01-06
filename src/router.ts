@@ -2,7 +2,6 @@ import { helpCommand } from "./commands/help.command.js";
 import { loginCommand } from "./commands/login.command.js";
 import { registerCommand } from "./commands/register.command.js";
 import { whoamiCommand } from "./commands/whoami.command.js";
-import { shortenCommand } from "./commands/shorten.command.js";
 import { logoutCommand } from "./commands/logout.command.js";
 
 export function runCLI(args: string[]) {
@@ -20,10 +19,6 @@ export function runCLI(args: string[]) {
     case "whoami":
       whoamiCommand();
       break;
-    
-    case "shorten":
-      shortenCommand(args.slice(1));
-      break;  
 
     case "logout":
       logoutCommand();
